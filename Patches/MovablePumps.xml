@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MoisturePump"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MoisturePump"]</xpath>
+		<value>
+            <thingCategories>
+            <li>BuildingsProduction</li>
+            </thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MoisturePump"]/statBases</xpath>
+		<value>
+			<Mass>35</Mass>
+		</value>
+	</Operation>
+</Patch>
